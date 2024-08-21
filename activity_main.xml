@@ -1,0 +1,256 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="DATA PACKETS"
+        android:textSize="24sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView127"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" >
+
+        <TextView
+            android:id="@+id/str"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f4e5ffff"
+            android:padding="10dp"
+            android:text="no data yet"
+            android:textColor="#ff304ffe"
+            android:textSize="14sp" />
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView127"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintBottom_toTopOf="@id/horsv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="REQUEST PARAMS"
+        android:textColor="#ff304ffe"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/horsv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toTopOf="@id/bottons"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffff0000"
+                android:padding="10dp"
+                android:text="reqDir"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/RequestDir"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:background="#ffff0000"
+                
+                android:minWidth="40dp"
+                android:padding="10dp"
+                android:text="00"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="#477fdfda"
+                android:padding="10dp"
+                android:text="Recepient"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/Recipient"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="#477fdfda"
+                
+                android:minWidth="50dp"
+                android:padding="10dp"
+                android:text="0000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="#ff5bbaf5"
+                android:padding="5dp"
+                android:text="tReq"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/Requesttype"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="#ff5bbaf5"
+                
+                android:minWidth="40dp"
+                android:padding="5dp"
+                android:text="00"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ffff00ff"
+                android:padding="5dp"
+                android:text="Req"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/Request"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="#ffff00ff"
+                
+                android:minWidth="40dp"
+                android:padding="5dp"
+                android:text="0000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="#477fdfff"
+                android:padding="5dp"
+                android:text="wvalue"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/wvalue"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="#477fdfff"
+                
+                android:minWidth="50dp"
+                android:padding="5dp"
+                android:text="0000"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#fddf00ff"
+                android:padding="5dp"
+                android:text="Windex"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/wInded"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="#fddf00ff"
+                
+                android:minWidth="40dp"
+                android:padding="5dp"
+                android:text="0000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:background="#ff5bba00"
+                android:padding="5dp"
+                android:text="length"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/wlength"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="#ff5bba00"
+                
+                android:minWidth="40dp"
+                android:padding="5dp"
+                android:text="0000"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bottons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#ff5bbaf5"
+        android:minHeight="25dp"
+        android:minWidth="50dp" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minHeight="25dp"
+            android:minWidth="50dp"
+            android:onClick="control"
+            android:text="control  request"
+            android:textColor="#ff304ffe"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:minHeight="25dp"
+            android:minWidth="50dp"
+            android:onClick="bulk"
+            android:text="bulk request"
+            android:textColor="#ff304f00"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
