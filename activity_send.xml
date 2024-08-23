@@ -1,0 +1,41 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SendActivity" >
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="usbSend" />
+
+    <Button
+        android:id="@+id/buttonSend2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send" />
+
+	<Button
+		android:id="@+id/buttonSend3"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="usbSend3" />	
+
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter ure message" />
+	
+		<TextView
+		android:id="@+id/TextMessage"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Enter ure message" />	
+		
+
+</LinearLayout>
