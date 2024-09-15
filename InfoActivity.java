@@ -1,3 +1,19 @@
-«<upWÍ\ºoe¸àÕ}uRprte)ÔMÒ}»ífuStß‘p¡ˆîãˆ”ª¡û8º²rI÷Jë>®¬
-åtG«T…Šº£+K¡^UŒ­še­^î[.ÔÖ}]YruGW>âC¡~CİÇÑ•Æs ä&zï±§±^¸OFªÔD•äÔZR3KjiÕÂ’
-ŞÿRÙÒªämªy.]ô»´$®ìiemÛcGWö´½­³Ç®ì¹çö:;º²§mÉ®ìi¯~P;º²§ƒİÆ®ì¹Wµ‹šÇ®ìÉwlHóÛÑ•=]^•»Z¬úíèÊ®NÕ®ìéæTíèÊîNÕ®ìé¡f›ß®ìééTíèÊ^NÕ®ì¹Ï¡zìèÊ¾Îsé±£+{î·ÚÑ•=ılÅ®ìyÀy®<vteÏƒw>ï;º²ç!«šìèÊşÿ£Ÿ]Ù3 ªŸ]Ù3ğô³£+{Eõ³£+{Gß®ìy8J¶£+{†DÉvteÏĞ(Ù®ì%ÛÑ•=Ã£d;º²ç‘ÿ±vteÏˆ¨=°£+{FZò 9/vteÏè¨­ØÑ•=cşÇVìèÊ±Q[±£+{2gGWöŒûæìèÊñQæìèÊ	QæìèÊ‰Q²]Ù3)J¶£+{&ÿÛÑ•=S¢6nGWöL³/b;º²gºÕP½ìÙÑ•=3í†vteÏl«áãIQÉbş
+package de.quandoo.android2androidaccessory;
+
+import android.os.Bundle;
+//import android.support.v7.app.ActionBarActivity;
+import android.util.Log;
+import androidx.appcompat.app.AppCompatActivity;
+
+public class InfoActivity extends AppCompatActivity {
+    private static String TAG = "InfoActivity";
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Log.i(TAG, "onCreate: savedInstancestate=" + savedInstanceState);
+
+        setContentView(R.layout.activity_info);
+    }
+
+}
