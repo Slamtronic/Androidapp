@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:layout_margin="16dp"
+     android:orientation="vertical"
+     tools:context=".MainActivity">
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:textAlignment="center"
+         android:padding="8dp"
+         android:textSize="24sp"
+         android:id="@+id/tx4"
+         android:text="Iplocalizer"
+         android:textStyle="bold" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:hint="latitude"
+         android:layout_marginTop="14dp"
+         android:autofillHints="name"
+         android:inputType="textPersonName"
+         android:id="@+id/tx" />
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:hint="longitude"
+         android:layout_marginTop="14dp"
+         android:autofillHints="name"
+         android:id="@+id/tx1" />
+    
+   
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:hint="speed"
+         android:layout_marginTop="14dp"
+         android:autofillHints="name"
+         android:id="@+id/tx2" />
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:orientation="horizontal">
+
+        <Switch
+             android:layout_height="wrap_content"
+             android:layout_width="0dp"
+             android:layout_marginEnd="8dp"
+             android:textColor="#aa446666"
+             android:layout_marginTop="26dp"
+             android:layout_weight="1"
+             android:id="@+id/update"
+             android:text="update" />
+
+        <Switch
+             android:layout_height="wrap_content"
+             android:layout_width="0dp"
+             android:textColor="#aaff80"
+             android:layout_marginTop="8dp"
+             android:layout_marginStart="26dp"
+             android:layout_weight="1"
+             android:id="@+id/gps"
+             android:text="gps" />
+
+    </LinearLayout>
+
+    <TextView
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:textColor="#447788"
+         android:id="@+id/mode"
+         android:text="no mode selected" />
+
+</LinearLayout>
