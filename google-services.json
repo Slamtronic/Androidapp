@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "548674475486",
+    "project_id": "myapp2-2000",
+    "storage_bucket": "myapp2-2000.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548674475486:android:e2e64aa3b0a9a6bef5794f",
+        "android_client_info": {
+          "package_name": "slam.data.base1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByRFJMm2xnoDG9xKX1P0PldOd1EkLnEJo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
