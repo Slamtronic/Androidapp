@@ -1,0 +1,55 @@
+
+plugins {
+    id 'com.android.application'
+    
+}
+
+android {
+    namespace 'example.zxing'
+    compileSdk 33
+    
+    defaultConfig {
+        applicationId "example.zxing"
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        
+        vectorDrawables { 
+            useSupportLibrary true
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    buildFeatures {
+        viewBinding true
+        
+    }
+    
+}
+
+dependencies {
+
+
+    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+    implementation("androidx.appcompat:appcompat:1.6.1")
+    implementation("com.google.android.material:material:1.9.0")
+    
+   
+    implementation 'com.journeyapps:zxing-android-embedded:4.3.0' // QR code scanning
+    implementation 'com.google.zxing:core:3.4.1' // ZXing core library
+
+
+    
+}
