@@ -1,5 +1,5 @@
 rules{
 "read":"true",
-"write":"true"
+"write":"true",
 
 }
