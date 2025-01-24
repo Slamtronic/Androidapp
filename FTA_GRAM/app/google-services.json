@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "941922180505",
+    "project_id": "slamchatapp-6670a",
+    "storage_bucket": "slamchatapp-6670a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941922180505:android:120a799c3e21519efa8708",
+        "android_client_info": {
+          "package_name": "slamtronic.chat.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9F1CfJJVk1ET-YnYHquWAJh5EWOlLvbU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
