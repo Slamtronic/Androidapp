@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_height="match_parent"
+     android:layout_width="match_parent"
+     android:background="#aadffdff"
+     android:padding="16dp"
+     android:orientation="vertical">
+
+    <RelativeLayout
+         android:layout_height="50dp"
+         android:layout_width="match_parent"
+         android:orientation="horizontal">
+
+        <Button
+             android:layout_height="match_parent"
+             android:layout_width="130dp"
+             android:textSize="12sp"
+             android:backgroundTint="#ffdffdff"
+             android:textColor="#ff008000"
+             android:paddingStart="10dp"
+             android:id="@+id/resignupButton"
+             android:text="UNSUBS" />
+
+        <Button
+             android:layout_height="match_parent"
+             android:layout_width="130dp"
+             android:paddingEnd="10dp"
+             android:layout_alignParentEnd="true"
+             android:textSize="12sp"
+             android:backgroundTint="#ffdffdff"
+             android:textColor="#008000"
+             android:id="@+id/readButton"
+             android:text="info" />
+
+    </RelativeLayout>
+
+    <ScrollView
+         android:layout_height="0dp"
+         android:layout_width="match_parent"
+         android:hint="mwssage"
+         android:layout_weight="10">
+
+        <TextView
+             android:layout_height="match_parent"
+             android:layout_width="match_parent"
+             android:textSize="13sp"
+             android:textColor="#700000"
+             android:id="@+id/chat" />
+
+    </ScrollView>
+
+    <LinearLayout
+         android:layout_height="wrap_content"
+         android:layout_width="match_parent"
+         android:gravity="bottom">
+
+        <Button
+             android:layout_height="50dp"
+             android:layout_width="0dp"
+             android:paddingBottom="10dp"
+             android:textSize="10sp"
+             android:backgroundTint="#ffdffdff"
+             android:textColor="#008000"
+             android:layout_alignBottom="@id/lnr"
+             android:layout_weight="3"
+             android:id="@+id/updateButton"
+             android:text="send" />
+
+        <EditText
+             android:layout_height="100dp"
+             android:layout_width="0dp"
+             android:hint="Enter param1"
+             android:textColorHint="#008000"
+             android:textSize="13sp"
+             android:textColor="#ffffff"
+             android:layout_weight="10"
+             android:id="@+id/param1EditText" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+         android:layout_height="50dp"
+         android:layout_width="match_parent"
+         android:gravity="center"
+         android:id="@+id/lnr">
+
+        <Button
+             android:layout_height="wrap_content"
+             android:layout_width="250dp"
+             android:foregroundGravity="center"
+             android:textAlignment="center"
+             android:padding="8dp"
+             android:onClick="sharFile"
+             android:textSize="12sp"
+             android:backgroundTint="#ffffffff"
+             android:textColor="#500000"
+             android:id="@+id/title"
+             android:text="FTA CHAT ROOM"
+             android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</LinearLayout>
